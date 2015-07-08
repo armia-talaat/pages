@@ -214,7 +214,7 @@ div.container{
 	}
 }
 .srchresults{
-	select{
+	select,input{
 		margin-top: @baseline;
 	}
 	button{
@@ -223,13 +223,14 @@ div.container{
 }
 #results{
 	background-color: #f5f5f5;
-	padding-top:@theme-margin;
+	padding-top:@body-font-size;
 	padding-bottom: @baseline;
 	div.col-lg-4{
 		div.col-xs-6{
 			button{
 				margin-left: auto;
 				margin-right: auto;
+				font-family: gelight;
 			}
 			h2{
 				font-size: 1.2em;
@@ -275,6 +276,15 @@ div.container{
 }
 #searchform{
 	margin-bottom: @baseline;
+	input{
+		border-radius: 15px;
+		&[placeholder]{
+		direction: rtl;
+		text-align: right;
+		font-family: gelight;
+	}
+	}
+
 	select{
 		direction: rtl;
 		text-align: right;
@@ -299,7 +309,7 @@ div.container{
 		padding-top: @body-font-size;
 		a{
 			h3{
-		font-size: 1em;
+		font-size: 0.8em;
 		color:white;
 		margin-top: 5px;
   		margin-bottom: 0;
@@ -311,6 +321,7 @@ div.container{
 				text-decoration: none;
 				h3{
 					color: #8a8a8a;
+
 				}
 			}
 		}
@@ -326,7 +337,7 @@ div.container{
 				}
 			}
 		h3{
-			font-size: 1em;
+			font-size: 0.8em;
 			display: inline;
 			color: white;
 			margin-left:@body-font-size;
