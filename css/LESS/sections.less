@@ -2,6 +2,12 @@
 h1,h2,h3,p{
 	  direction: rtl;
 }
+h1,h2{
+	font-family: gebold;
+}
+h3,p{
+	font-family: gelight;
+}
 .img-responsive{
 	margin-left:auto;
 	margin-right: auto; 
@@ -133,6 +139,7 @@ div.container{
 	#rdsec{
 		background-color: #f2f2f2;
 			border-radius: 5px;
+			padding-bottom: @body-font-size;
 			margin-top: @body-font-size;
 			color: #5a5a5a;
 			div.col-lg-3{
@@ -152,6 +159,9 @@ div.container{
 				padding-top: @body-font-size;
 				padding-bottom: @baseline;
 				input{
+					&[placeholder]{
+						font-family: gelight;
+					}
 					text-align: right;
 					float: right;
 					margin-top: @body-font-size;
@@ -172,6 +182,62 @@ div.container{
     background-color: #419641;
     background-image: linear-gradient(to bottom, #419641, #419641);
     border-color: #3E8F3E #3E8F3E #3E8F3E;
+}
+
+/* footer */
+@media (max-width: 970px){
+	#footer{
+		h3{
+			margin-left: 0 !important;
+			font-size: 0.7em !important;
+		}
+	}
+}
+#footer{
+	h3{
+		  font-family: consolas;
+	}
+	margin-bottom: 0;
+	padding-bottom: @body-font-size;
+	background-color: #2d2d2d;
+	div.col-xs-3{
+		padding-top: @body-font-size;
+		a{
+			h3{
+		font-size: 1em;
+		color:white;
+		margin-top: 5px;
+  		margin-bottom: 0;
+  		span.glyphicon{
+  			top:2px;
+  		}
+			}
+			&:hover{
+				text-decoration: none;
+				h3{
+					color: #8a8a8a;
+				}
+			}
+		}
+	}
+	div.col-xs-8{
+		text-align: right;
+		padding-top: @body-font-size;
+		a{
+			&:hover{
+				text-decoration: none;
+				h3{
+					color: #8a8a8a;
+				}
+			}
+		h3{
+			font-size: 1em;
+			display: inline;
+			color: white;
+			margin-left:@body-font-size;
+		}
+	}
+	}
 }
 
 /* end of booking */
