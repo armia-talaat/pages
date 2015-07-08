@@ -1,0 +1,258 @@
+@import url(http://fonts.googleapis.com/css?family=Comfortaa:400,700);
+/* MAIN STYLE SHEET */
+/* Load Variables */
+/* VARIABLES.LESS */
+/* typography variables */
+/* colors */
+/* Load Typography */
+/* Typography */
+body {
+  color: #;
+  font-size: 20px;
+}
+/* Load Navbar */
+@media (max-width: 970px) {
+  nav .menunav {
+    display: none ;
+    text-align: center;
+    border-radius: 0 0 15px 15px;
+    background: #ff3c3c;
+  }
+  nav div.collapser {
+    text-align: center;
+    display: inline-block !important;
+    margin-top: 10px;
+  }
+  nav div.collapser button {
+    background: none;
+    border: none;
+    transition: transform 1s;
+    outline: none;
+  }
+  nav div.collapser button i {
+    color: white;
+  }
+}
+nav div.container-fluid {
+  background-color: #ff3c3c;
+  height: 45px;
+}
+nav li {
+  margin-top: 5px;
+}
+nav li a {
+  font-size: 0.5em;
+  color: white;
+  line-height: 10px !important;
+}
+nav li a:hover {
+  background: #ffa2a2 !important;
+}
+nav li a:active,
+nav li a:active,
+nav li a:visited {
+  background: #d50000 !important;
+  color: white;
+}
+nav div.collapser {
+  display: none;
+}
+/* Load Parallax */
+#para1 {
+  background: url(../../parallax/iron-man-superheroes-wallpaper.jpg) 50% 0 no-repeat fixed;
+  color: white;
+  height: 480px;
+  margin: 0 auto;
+  padding: 0;
+}
+#para2 {
+  background: url(../../parallax/section2para.jpg) 50% 0 no-repeat fixed;
+  color: white;
+  height: 480px;
+  margin: 0 auto;
+  padding: 0;
+}
+#contact {
+  background: url(../../parallax/contact.jpg) 50% 0 no-repeat fixed;
+  color: white;
+}
+/* -------------------------------- 
+
+Main Components hero parallax
+
+-------------------------------- */
+.cd-background-wrapper {
+  background-color: #001426;
+  position: relative;
+  overflow: hidden;
+}
+.no-touch .cd-background-wrapper {
+  -webkit-perspective: 4000px;
+  -moz-perspective: 4000px;
+  perspective: 4000px;
+}
+.cd-background-wrapper::before {
+  /* never visible - this is used in jQuery to check the device type */
+  content: 'web';
+  display: none;
+}
+.touch .cd-background-wrapper::before {
+  /* never visible - this is used in jQuery to check the device type */
+  content: 'mobile';
+}
+.cd-floating-background {
+  position: relative;
+}
+.cd-floating-background img {
+  display: block;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  /* fixes a Firefox bug - images not correctly rendered*/
+  background-color: rgba(255, 255, 255, 0.01);
+}
+.cd-floating-background img:not(:first-child) {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.no-touch .cd-floating-background {
+  top: 0;
+  left: 0;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.no-touch .cd-floating-background.is-absolute {
+  position: absolute;
+}
+.no-touch .cd-floating-background img:first-child {
+  -webkit-transform: translateZ(50px);
+  -moz-transform: translateZ(50px);
+  -ms-transform: translateZ(50px);
+  -o-transform: translateZ(50px);
+  transform: translateZ(50px);
+}
+.no-touch .cd-floating-background img:nth-child(2) {
+  -webkit-transform: translateZ(290px);
+  -moz-transform: translateZ(290px);
+  -ms-transform: translateZ(290px);
+  -o-transform: translateZ(290px);
+  transform: translateZ(290px);
+}
+.no-touch .cd-floating-background img:nth-child(3) {
+  -webkit-transform: translateZ(400px);
+  -moz-transform: translateZ(400px);
+  -ms-transform: translateZ(400px);
+  -o-transform: translateZ(400px);
+  transform: translateZ(400px);
+}
+.no-touch.no-preserve-3d .cd-floating-background {
+  /* we target browsers that don't support preserve-3d and show just a standard image - no effect visible */
+  position: relative;
+}
+/* Load Parallax */
+/* section 1 */
+/* section 2 */
+section {
+  height: auto !important;
+}
+section#about {
+  background-image: url(../../img/back/about.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+section#about img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+section#about ul:nth-child(3) {
+  margin-left: 40px;
+}
+section#about li {
+  display: inline-block;
+  margin-left: 20px;
+}
+section#about p {
+  margin-top: 90px;
+  font-size: 0.9em;
+  font-family: 'Comfortaa', cursive, Helvetica, Sans-Serif;
+  color: #494949;
+}
+section#about h3 {
+  text-align: center;
+  color: #db4517;
+  font-family: 'Comfortaa', cursive, Helvetica, Sans-Serif;
+  font-weight: bold;
+}
+section#about h6 {
+  text-decoration: none;
+  color: #db4517;
+  font-family: 'Comfortaa', cursive, Helvetica, Sans-Serif;
+  text-align: center;
+}
+@media (max-width: 1200px) {
+  section#about {
+    background-size: auto 100%;
+  }
+}
+/* section 3 */
+section#brand {
+  background-color: #f1f1f1;
+}
+section#brand div.row {
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+section#brand img {
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: 90px;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+section#brand img:hover {
+  opacity: 0.5;
+}
+/* section 4 */
+section#branch img {
+  min-width: 100%;
+}
+section#branch h3 {
+  position: absolute;
+  text-align: center;
+  font-size: 2em;
+  color: white;
+  margin-top: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 97%;
+}
+/* section 5 */
+section#contact h1 {
+  text-align: center;
+  font-size: 2em;
+  color: white;
+}
+section#contact label {
+  color: white;
+  font-size: 1em;
+}
+section#contact button {
+  background-image: url(../../img/submit.png);
+  background-size: 100% 100%;
+  padding: 20px;
+  background-color: transparent;
+  border: 0;
+  margin-bottom: 90px;
+}

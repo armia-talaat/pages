@@ -1,0 +1,255 @@
+@import url(http://fonts.googleapis.com/css?family=Comfortaa:400,700);
+/* MAIN STYLE SHEET */
+/* Load Variables */
+/* VARIABLES.LESS */
+/* typography variables */
+/* colors */
+/* Load Typography */
+/* Typography */
+body {
+  color: #;
+  font-size: 20px;
+}
+/* Load Navbar
+@import "navbar.less"; */
+/* Load Parallax */
+#para1 {
+  background: url(../../parallax/iron-man-superheroes-wallpaper.jpg) 50% 0 no-repeat fixed;
+  color: white;
+  height: 480px;
+  margin: 0 auto;
+  padding: 0;
+}
+#para2 {
+  background: url(../../parallax/section2para.jpg) 50% 0 no-repeat fixed;
+  color: white;
+  height: 480px;
+  margin: 0 auto;
+  padding: 0;
+}
+#contact {
+  background: url(../../parallax/contact.jpg) 50% 0 no-repeat fixed;
+  color: white;
+}
+/* -------------------------------- 
+
+Main Components hero parallax
+
+-------------------------------- */
+.cd-background-wrapper {
+  background-color: #001426;
+  position: relative;
+  overflow: hidden;
+}
+.no-touch .cd-background-wrapper {
+  -webkit-perspective: 4000px;
+  -moz-perspective: 4000px;
+  perspective: 4000px;
+}
+.cd-background-wrapper::before {
+  /* never visible - this is used in jQuery to check the device type */
+  content: 'web';
+  display: none;
+}
+.touch .cd-background-wrapper::before {
+  /* never visible - this is used in jQuery to check the device type */
+  content: 'mobile';
+}
+.cd-floating-background {
+  position: relative;
+}
+.cd-floating-background img {
+  display: block;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  /* fixes a Firefox bug - images not correctly rendered*/
+  background-color: rgba(255, 255, 255, 0.01);
+}
+.cd-floating-background img:not(:first-child) {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.no-touch .cd-floating-background {
+  top: 0;
+  left: 0;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.no-touch .cd-floating-background.is-absolute {
+  position: absolute;
+}
+.no-touch .cd-floating-background img:first-child {
+  -webkit-transform: translateZ(50px);
+  -moz-transform: translateZ(50px);
+  -ms-transform: translateZ(50px);
+  -o-transform: translateZ(50px);
+  transform: translateZ(50px);
+}
+.no-touch .cd-floating-background img:nth-child(2) {
+  -webkit-transform: translateZ(290px);
+  -moz-transform: translateZ(290px);
+  -ms-transform: translateZ(290px);
+  -o-transform: translateZ(290px);
+  transform: translateZ(290px);
+}
+.no-touch .cd-floating-background img:nth-child(3) {
+  -webkit-transform: translateZ(400px);
+  -moz-transform: translateZ(400px);
+  -ms-transform: translateZ(400px);
+  -o-transform: translateZ(400px);
+  transform: translateZ(400px);
+}
+.no-touch.no-preserve-3d .cd-floating-background {
+  /* we target browsers that don't support preserve-3d and show just a standard image - no effect visible */
+  position: relative;
+}
+/* Load Parallax */
+/* home */
+h1,
+h2,
+h3,
+p {
+  direction: rtl;
+}
+.img-responsive {
+  margin-left: auto;
+  margin-right: auto;
+}
+body#home {
+  background-color: #d5d5d5;
+}
+body#home img {
+  margin-left: auto;
+  margin-right: auto;
+}
+body#home div.row h1 {
+  text-align: center;
+  color: #616161;
+  text-shadow: 1px 1px whitesmoke;
+}
+body#home div.row a div#docpat img {
+  max-height: 300px;
+}
+body#home div.row a h2 {
+  border-top: 3px solid #1d77d8;
+  padding-top: 10px;
+  text-align: center;
+  color: #616161;
+}
+body#home div.row a:hover h2 {
+  text-shadow: 1px 1px whitesmoke;
+}
+/* booking */
+/* header */
+#header {
+  background-color: #f9f9f9;
+  border-bottom: 4px solid #eeeeee;
+}
+#header div.container .row div.col-xs-3 img {
+  margin-top: 20px;
+}
+#header div.container .row div.col-xs-1 img {
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+/* end of header */
+#sectwo .col-lg-3 div {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+#sectwo div div {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+#sectwo div div h2 {
+  text-align: center;
+  color: #5a5a5a;
+}
+#sectwo div div h3 {
+  text-align: center;
+  color: #5a5a5a;
+}
+#sectwo div div p {
+  text-align: center;
+  color: #5a5a5a;
+  min-height: 100px;
+}
+#sectwo .col-lg-6 {
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+#sectwo .col-lg-6 h3 {
+  text-align: right;
+  color: #5a5a5a;
+  direction: rtl;
+  margin-top: 60px;
+}
+#sectwo .col-lg-6 .row {
+  margin-top: 0;
+  padding-top: 0;
+}
+#sectwo .col-lg-6 .row div.col-xs-6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+#sectwo .col-lg-6 .row div.col-xs-6 h2 {
+  text-align: right;
+  font-weight: bold;
+}
+#sectwo .col-lg-6 .row div.col-xs-6 p {
+  min-height: 0;
+}
+#rdsec {
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  margin-top: 20px;
+  color: #5a5a5a;
+}
+#rdsec div.col-lg-3 select {
+  margin-bottom: 20px;
+  text-align: right;
+  float: right;
+  direction: rtl;
+}
+#rdsec div.col-lg-3 select option {
+  text-align: right;
+  float: right;
+}
+#rdsec div.col-lg-4 {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+#rdsec div.col-lg-4 input {
+  text-align: right;
+  float: right;
+  margin-top: 20px;
+}
+.btn.btn-success {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  border-radius: 25px;
+  background-color: #5CB85C;
+  background-image: linear-gradient(to bottom, #5cb85c, #419641);
+  border-color: #3E8F3E #3E8F3E #3E8F3E;
+}
+.btn.btn-success:hover {
+  color: #ffffff;
+  background-color: #419641;
+  background-image: linear-gradient(to bottom, #419641, #419641);
+  border-color: #3E8F3E #3E8F3E #3E8F3E;
+}
