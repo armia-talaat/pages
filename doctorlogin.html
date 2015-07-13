@@ -23,6 +23,25 @@
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
          <!-- Font Awesome -->
         <link rel="stylesheet" href="css/font-awesome.css">
+        <style>
+#login {
+  background-color: #19c3d8;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+#login div.form-group {
+  text-align: right;
+  direction: rtl;
+}
+#login div.form-group label {
+  color: white;
+  direction: rtl;
+}
+
+        </style>
     </head>
     <!-- end of head -->
     <!-- start of body -->
@@ -50,47 +69,29 @@
     </div><!-- end of container-fluid -->
     <div class="container-fluid">
         <div class="container">
-               <div class="row" id="sectwo">
-        <div class="col-lg-3 col-lg-offset-1 col-md-3 col-md-offset-1">
-            <div><img src="img/book/doc.png" alt="doc avatar" class="img-responsive" draggable="false">
-            <h2>اسم الطبيب</h2>
-            <h3>التخصص</h3>
-            </div>
-            <div>
-                <p>الاماكن التي يعمل/تعمل بها</p>
-            </div>
-        </div>
-        <div class="col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1">
-        <h3>العنوان:<span>  </span></h3>
-        <h3>سعر الحجز:<span>  </span></h3>
-        <h3>المواعيد المتاح بها:<span>  </span></h3>
-        <div class="row">
-        <div class="col-xs-6">
-            <h2>الثلاثاء</h2>
-            <p>من ( ) الى ( )</p>
-            <h2>الثلاثاء</h2>
-            <p>من ( ) الى ( )</p>
-        </div>
-        <div class="col-xs-6">
-            <h2>الثلاثاء</h2>
-            <p>من ( ) الى ( )</p>
-            <h2>الثلاثاء</h2>
-            <p>من ( ) الى ( )</p>
+               <div class="row">
+               <div class="col-lg-4 col-lg-offset-4">
+                <img src="img/home/logoup.png" alt="el tamargy logo" class="img-responsive" draggable="false" id="logologin"></div>
+                </div>
+                <div class="row">
+               <div class="col-lg-8 col-lg-offset-2" id="login">
+
+                 <form action="">
+                 <div class="form-group">
+                 <label for="Inputusername1">الاسم :</label>
+    <input type="email" class="form-control" id="Inputusername1">
+  </div>
+  <div class="form-group">
+    <label for="InputPassword1">كلمة المرور :</label>
+    <input type="password" class="form-control" id="InputPassword1">
+  </div>
+  <button type="submit" class="btn btn-success btn-lg">تسجيل الدخول</button>
+</form>
+               </div>
+                </div>
         </div>
         </div>
-        </div>
-        </div>
-        <div class="row">
-        <div class="col-lg-10 col-lg-offset-1"  >
-        <div class="row" >
-            <div class="col-lg-4 col-lg-offset-4">
-             <button type="button" class="btn btn-success btn-lg btn-block"><h3>تعديل الصفحة</h3></button>
-            </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        <div class="row" id="footer">
+        <div class="container-fluid" id="footer">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-3"><a href=""><h3>Media Club  <span class="glyphicon glyphicon-copyright-mark"></span> </h3></a></div>
@@ -116,7 +117,6 @@
             </div>
         </div>
     </div>
-    
      <!-- end of inner -->
         <script>window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
