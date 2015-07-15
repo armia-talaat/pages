@@ -50,32 +50,86 @@
     </div><!-- end of container-fluid -->
     <div class="container-fluid">
         <div class="container">
+        <form action="">
                <div class="row" id="sectwo">
         <div class="col-lg-3 col-lg-offset-1 col-md-3 col-md-offset-1">
             <div><img src="img/book/doc.png" alt="doc avatar" class="img-responsive" draggable="false">
             <h2>اسم الطبيب</h2>
+            <input type="text" id="docname" class="form-control">
             <h3>التخصص</h3>
+            <input type="text" id="docmajor" class="form-control">
             </div>
             <div>
                 <p>الاماكن التي يعمل/تعمل بها</p>
+                <textarea class="form-control" id="docjobs"></textarea>
             </div>
         </div>
-        <div class="col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1">
-        <h3>العنوان:<span>  </span></h3>
-        <h3>سعر الحجز:<span>  </span></h3>
-        <h3>المواعيد المتاح بها:<span>  </span></h3>
+        <div class="col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1" id="docinfo">
         <div class="row">
-        <div class="col-xs-6">
-            <h2>الثلاثاء</h2>
-            <p>من ( ) الى ( )</p>
-            <h2>الثلاثاء</h2>
-            <p>من ( ) الى ( )</p>
+            <div class="col-xs-10 col-xs-offset-1">
+        <div class="form-group">
+        <label for="address">العنوان:</label>
+        <input type="text" id="address" class="form-control"> </div>
         </div>
-        <div class="col-xs-6">
-            <h2>الثلاثاء</h2>
-            <p>من ( ) الى ( )</p>
-            <h2>الثلاثاء</h2>
-            <p>من ( ) الى ( )</p>
+        </div>
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-7">
+        <div class="form-group">
+        <label for="price">سعر الحجز:</label>
+        <input type="number" id="price" min="0" class="form-control"> </div>
+        </div>
+        </div>
+        <h3>المواعيد المتاح بها:</h3>
+        <div class="row">
+            <div class="col-xs-5 col-xs-offset-6">
+                <h3>المواعيد</h3>
+                    <div class="form-group">
+                        <label for="from">من</label>
+                         <input type="time" class="form-control" id="from">
+                        <label for="to">الى</label>
+                         <input type="time" class="form-control" id="to">
+                   </div>
+            </div>
+        </div>
+        <div class="row">
+        <div class="col-xs-3 col-xs-offset-8">
+        <h3>الايام</h3>
+            <div class="checkbox">
+                <label>
+                  <input type="checkbox">السبت
+                </label>
+
+            </div>
+            <div class="checkbox">
+                 <label>
+                  <input type="checkbox">الاحد
+                </label>
+            </div>  
+            <div class="checkbox">
+                <label>
+                  <input type="checkbox">الاثنين
+                </label>
+            </div>  
+            <div class="checkbox">
+                <label>
+                  <input type="checkbox">الثلاثاء
+                </label>
+            </div>  
+            <div class="checkbox">
+                <label>
+                  <input type="checkbox">الاربعاء
+                </label>
+            </div>  
+            <div class="checkbox">
+                <label>
+                  <input type="checkbox">الخميس
+                </label>
+            </div>  
+            <div class="checkbox">
+                <label>
+                  <input type="checkbox">الجمعة
+                </label>
+            </div>
         </div>
         </div>
         </div>
@@ -84,11 +138,12 @@
         <div class="col-lg-10 col-lg-offset-1"  >
         <div class="row" >
             <div class="col-lg-4 col-lg-offset-4">
-             <button type="button" class="btn btn-success btn-lg btn-block"><h3>تعديل الصفحة</h3></button>
+             <button type="submit" class="btn btn-success btn-lg btn-block"><h3>تعديل الصفحة</h3></button>
             </div>
         </div>
         </div>
         </div>
+        </form>
         </div>
         <div class="row" id="footer">
             <div class="container">

@@ -83,7 +83,33 @@ div.container{
 	}
 }
 	#sectwo{
+div.col-lg-3.col-lg-offset-1.col-md-3.col-md-offset-1{
+	input{
+		direction: rtl;
+		font-family: gelight;
+		text-align: right;
+		width: 80%;
+		max-width: 80%;
+		margin-left: auto;
+  		margin-right: auto;
+	}
+	p{
+		margin-bottom: @body-font-size;
+		min-height: 0;
 
+	}
+	textarea{
+		direction: rtl;
+		text-align: right;
+		font-family: gelight,Helvetica;
+		max-width: 80%;
+		width: 80%;
+		min-height: 150px;
+		max-height:340px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
 		div{
 			
 			div{
@@ -109,6 +135,45 @@ div.container{
 			margin-top: @body-font-size;
 			}
 		}
+	div#docinfo{
+
+		div.row{
+				h3{
+					margin-top: @body-font-size;
+
+				}
+			div.form-group{
+				direction: rtl;
+				text-align: right;
+				input{
+					direction: rtl;
+					font-family: gelight;
+					font-size: 17px;
+					margin-top: 10px;
+				}
+				input[type="time"]
+				{text-align: center;
+					font-family: gelight ,Helvetica; }
+					label{
+							font-family: gelight;
+							padding-left: 0;
+							padding-right: 10px;
+						}
+				
+				
+			}
+	
+			div{
+
+				margin-top: 0;
+			padding-top: 0;
+			padding-bottom: 0;
+			}
+			margin-top: @body-font-size;
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+	}
 	.col-lg-6{
 		background-color: #f2f2f2;
 			border-radius: 5px;
@@ -117,17 +182,45 @@ div.container{
 					text-align: right;
 					color: #5a5a5a;
 					direction: rtl;
-					margin-top: @baseline*2;
 				}
 				.row{
 					margin-top: 0;
 					padding-top: 0;
-				div.col-xs-6{
+
+				div.col-xs-3.col-xs-offset-8,div.col-xs-4.col-xs-offset-7{
 					margin-top: 0;
 					padding-top: 0;
-					h2{
+					div.form-group{
+						margin-top: @body-font-size;
+						padding-top: 0;
+						padding-bottom: 0;
+						text-align: right;
+					}
+					label{
+							font-family: gelight;
+							padding-left: 0;
+							padding-right: 10px;
+						}
+					h3{
+						margin-top: @body-font-size;
+						text-align: right;
+					}
+					div.checkbox{
+						text-align: right;
+						padding-top: 0;
+						padding-bottom: 0;
+						margin-top: 0;
+						direction: rtl;
+						label{
+							font-family: gelight;
+							padding-left: 0;
+						}
+					}
+					input[type="checkbox"]{
 						text-align: right;
 						font-weight: bold;
+						margin: 8px 0 0;
+						margin-right: -20px;
 					}
 					p{
 						min-height: 0;

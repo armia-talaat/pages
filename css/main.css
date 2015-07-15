@@ -83,6 +83,30 @@ body#home div.row a:hover h2 {
   margin-left: -15px;
   margin-right: -15px;
 }
+#sectwo div.col-lg-3.col-lg-offset-1.col-md-3.col-md-offset-1 input {
+  direction: rtl;
+  font-family: gelight;
+  text-align: right;
+  width: 80%;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#sectwo div.col-lg-3.col-lg-offset-1.col-md-3.col-md-offset-1 p {
+  margin-bottom: 20px;
+  min-height: 0;
+}
+#sectwo div.col-lg-3.col-lg-offset-1.col-md-3.col-md-offset-1 textarea {
+  direction: rtl;
+  text-align: right;
+  font-family: gelight,Helvetica;
+  max-width: 80%;
+  width: 80%;
+  min-height: 150px;
+  max-height: 340px;
+  margin-left: auto;
+  margin-right: auto;
+}
 #sectwo div div {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -103,6 +127,38 @@ body#home div.row a:hover h2 {
   color: #5a5a5a;
   min-height: 100px;
 }
+#sectwo div#docinfo div.row {
+  margin-top: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+#sectwo div#docinfo div.row h3 {
+  margin-top: 20px;
+}
+#sectwo div#docinfo div.row div.form-group {
+  direction: rtl;
+  text-align: right;
+}
+#sectwo div#docinfo div.row div.form-group input {
+  direction: rtl;
+  font-family: gelight;
+  font-size: 17px;
+  margin-top: 10px;
+}
+#sectwo div#docinfo div.row div.form-group input[type="time"] {
+  text-align: center;
+  font-family: gelight ,Helvetica;
+}
+#sectwo div#docinfo div.row div.form-group label {
+  font-family: gelight;
+  padding-left: 0;
+  padding-right: 10px;
+}
+#sectwo div#docinfo div.row div {
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
 #sectwo .col-lg-6 {
   background-color: #f2f2f2;
   border-radius: 5px;
@@ -112,21 +168,56 @@ body#home div.row a:hover h2 {
   text-align: right;
   color: #5a5a5a;
   direction: rtl;
-  margin-top: 60px;
 }
 #sectwo .col-lg-6 .row {
   margin-top: 0;
   padding-top: 0;
 }
-#sectwo .col-lg-6 .row div.col-xs-6 {
+#sectwo .col-lg-6 .row div.col-xs-3.col-xs-offset-8,
+#sectwo .col-lg-6 .row div.col-xs-4.col-xs-offset-7 {
   margin-top: 0;
   padding-top: 0;
 }
-#sectwo .col-lg-6 .row div.col-xs-6 h2 {
+#sectwo .col-lg-6 .row div.col-xs-3.col-xs-offset-8 div.form-group,
+#sectwo .col-lg-6 .row div.col-xs-4.col-xs-offset-7 div.form-group {
+  margin-top: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
+  text-align: right;
+}
+#sectwo .col-lg-6 .row div.col-xs-3.col-xs-offset-8 label,
+#sectwo .col-lg-6 .row div.col-xs-4.col-xs-offset-7 label {
+  font-family: gelight;
+  padding-left: 0;
+  padding-right: 10px;
+}
+#sectwo .col-lg-6 .row div.col-xs-3.col-xs-offset-8 h3,
+#sectwo .col-lg-6 .row div.col-xs-4.col-xs-offset-7 h3 {
+  margin-top: 20px;
+  text-align: right;
+}
+#sectwo .col-lg-6 .row div.col-xs-3.col-xs-offset-8 div.checkbox,
+#sectwo .col-lg-6 .row div.col-xs-4.col-xs-offset-7 div.checkbox {
+  text-align: right;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  direction: rtl;
+}
+#sectwo .col-lg-6 .row div.col-xs-3.col-xs-offset-8 div.checkbox label,
+#sectwo .col-lg-6 .row div.col-xs-4.col-xs-offset-7 div.checkbox label {
+  font-family: gelight;
+  padding-left: 0;
+}
+#sectwo .col-lg-6 .row div.col-xs-3.col-xs-offset-8 input[type="checkbox"],
+#sectwo .col-lg-6 .row div.col-xs-4.col-xs-offset-7 input[type="checkbox"] {
   text-align: right;
   font-weight: bold;
+  margin: 8px 0 0;
+  margin-right: -20px;
 }
-#sectwo .col-lg-6 .row div.col-xs-6 p {
+#sectwo .col-lg-6 .row div.col-xs-3.col-xs-offset-8 p,
+#sectwo .col-lg-6 .row div.col-xs-4.col-xs-offset-7 p {
   min-height: 0;
 }
 #rdsec {
